@@ -10,7 +10,6 @@ import pandas as pd
 import numpy as np
 from decimal import Decimal, ROUND_HALF_UP
 from scipy import stats
-from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 from statsmodels.stats.weightstats import ttest_ind as weight_ttest
 import math
@@ -102,7 +101,7 @@ class freq:
 ### cross table
 class cross:
     '''
-    Generate cross table for two variables with weight values.
+    Generate cross tabulation for two variables with weight values.
 
     Parameters
     ----------
@@ -320,7 +319,7 @@ class one_way_anova:
 ### post_hoc test
 class post_hoc:
     '''
-    Calculate the post-hoc test by Bonferroni correction for a variable with weight values.
+    Calculate the post-hoc test using Bonferroni correction for a variable with weight values.
 
     Parameters
     ----------
